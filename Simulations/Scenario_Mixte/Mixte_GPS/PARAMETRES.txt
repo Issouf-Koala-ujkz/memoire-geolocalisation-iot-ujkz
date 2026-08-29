@@ -1,0 +1,37 @@
+Projet CupCarbon 7.2 - Mixte_GPS
+==================================================================
+Scenario ..................... Mixte (Campus universitaire Joseph KI-ZERBO)
+Configuration ................ LoRaWAN / GPS
+Emprise ...................... 1.0 x 1.0 km
+Diagonale de la zone ......... 1.41 km
+Coin sud-ouest ............... lat 12.3820, lon -1.5030
+Capteurs ..................... 40
+Passerelles .................. 4 (identifiants 41 a 44)
+Modele de propagation ........ Okumura-Hata + FSPL
+Rayon radio LoRa ............. 1500 m
+Mobilite ..................... 1.0 a 20.0 km/h
+Spreading Factor ............. SF7 (BW 125 kHz, CR 4/5, 5468 bps)
+Charge utile ................. 20 octets
+T_loc ........................ 300 s -> 288 evenements/noeud/jour
+Duree simulee ................ 86400 s (24 h)
+Ecriture des resultats ....... toutes les 60 s (1440 points)
+Batterie ..................... 35640 J = 3000 mAh sous 3,3 V
+Graine ....................... 1
+
+METRIQUES SPATIALES (reponse au commentaire C020)
+------------------------------------------------------------------
+Passerelles visibles, minimum sur 24 h ... 4
+Distance max noeud -> 3e passerelle ...... 829 m
+Rayon radio configure ................... 1500 m
+Marge (rayon - distance max) ............ 671 m [OK]
+HDOP median ............................. 2.07
+HDOP percentile 95 ...................... 6.47
+HDOP maximum ............................ 7.42
+Part des positions avec HDOP > 10 ....... 0.0 %
+Echantillons evalues .................... 5800
+
+CONCLUSION SPATIALE
+------------------------------------------------------------------
+La portee radio n'est jamais le facteur limitant (marge positive
+sur toute la duree). Les echecs de resolution TDoA proviennent donc
+exclusivement de la degradation geometrique (HDOP > 10).

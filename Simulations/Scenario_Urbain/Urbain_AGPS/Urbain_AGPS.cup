@@ -1,0 +1,19 @@
+CupCarbon v. Klines 7.2
+----------------
+name:Urbain_AGPS
+zoom:4
+centerposition_la:12.36904649900001
+centerposition_lo:-1.5258037367999933
+map:0
+display_details:true
+draw_radio_links:false
+draw_sensor_arrows:false
+radio_links_color:2
+draw_marker_arrows:false
+display_rl_distance:false
+propagation:false
+display_marker_distance:false
+display_radio_messages:false
+draw_script_file_name:false
+display_print_messages:false
+display_all_routes:false

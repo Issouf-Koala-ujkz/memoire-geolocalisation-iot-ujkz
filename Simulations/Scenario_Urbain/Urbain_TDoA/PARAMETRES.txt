@@ -1,0 +1,37 @@
+Projet CupCarbon 7.2 - Urbain_TDoA
+==================================================================
+Scenario ..................... Urbain (Centre-ville de Ouagadougou)
+Configuration ................ LoRaWAN / TDoA
+Emprise ...................... 2.0 x 2.0 km
+Diagonale de la zone ......... 2.83 km
+Coin sud-ouest ............... lat 12.3600, lon -1.5350
+Capteurs ..................... 50
+Passerelles .................. 5 (identifiants 51 a 55)
+Modele de propagation ........ Okumura-Hata (n=3.5, sigma_s=8 dB)
+Rayon radio LoRa ............. 2500 m
+Mobilite ..................... 1.0 a 5.0 km/h
+Spreading Factor ............. SF7 (BW 125 kHz, CR 4/5, 5468 bps)
+Charge utile ................. 12 octets
+T_loc ........................ 300 s -> 288 evenements/noeud/jour
+Duree simulee ................ 86400 s (24 h)
+Ecriture des resultats ....... toutes les 60 s (1440 points)
+Batterie ..................... 35640 J = 3000 mAh sous 3,3 V
+Graine ....................... 1
+
+METRIQUES SPATIALES (reponse au commentaire C020)
+------------------------------------------------------------------
+Passerelles visibles, minimum sur 24 h ... 5
+Distance max noeud -> 3e passerelle ...... 1679 m
+Rayon radio configure ................... 2500 m
+Marge (rayon - distance max) ............ 821 m [OK]
+HDOP median ............................. 1.16
+HDOP percentile 95 ...................... 4.13
+HDOP maximum ............................ 5.34
+Part des positions avec HDOP > 10 ....... 0.0 %
+Echantillons evalues .................... 7250
+
+CONCLUSION SPATIALE
+------------------------------------------------------------------
+La portee radio n'est jamais le facteur limitant (marge positive
+sur toute la duree). Les echecs de resolution TDoA proviennent donc
+exclusivement de la degradation geometrique (HDOP > 10).

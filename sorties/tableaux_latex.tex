@@ -1,0 +1,64 @@
+%% Tableau III.1 — precision, avec intervalle de confiance
+\begin{table}[H]
+\centering
+\caption{Precision de localisation des configurations de reference (moyenne $\pm$ ecart-type sur 10 replications)}
+\label{tab:ref_precision}
+\small
+\begin{tabular}{|l|c|c|c|}
+\hline
+\rowcolor{myColor!20}
+\textbf{Configuration} & \textbf{Urbain} & \textbf{Rural} & \textbf{Mixte} \\
+\hline
+TDoA & 66.3 $\pm$ 0.9 & 57.2 $\pm$ 0.8 & 84.4 $\pm$ 1.1 \\ \hline
+GPS & 6.5 $\pm$ 0.0 & 4.9 $\pm$ 0.0 & 5.7 $\pm$ 0.0 \\ \hline
+AGPS & 14.9 $\pm$ 0.1 & 11.3 $\pm$ 0.1 & 13.1 $\pm$ 0.1 \\ \hline
+Optimisé & 28.6 $\pm$ 0.4 & 24.0 $\pm$ 0.4 & 22.9 $\pm$ 0.4 \\ \hline
+\end{tabular}
+\end{table}
+
+%% Tableau III.4 — performances completes
+\begin{table}[H]
+\centering
+\caption{Performances comparees des quatre configurations (moyenne sur 10 replications)}
+\label{tab:resultats_complets}
+\small
+\begin{tabular}{|l|l|r|r|r|r|r|}
+\hline
+\rowcolor{myColor!20}
+\textbf{Scenario} & \textbf{Configuration} & \textbf{RMSE (m)} & \textbf{P95 (m)} & \textbf{$E_{jour}$} & \textbf{Autonomie} & \textbf{Succes} \\
+\hline
+Urbain & TDoA & 66.3 & 143.6 & 3.14 & 954 & 100.0 \\ \hline
+ & GPS & 6.5 & 12.8 & 75.24 & 40 & 93.1 \\ \hline
+ & AGPS & 14.9 & 29.3 & 29.16 & 103 & 96.5 \\ \hline
+ & Optimisé & 28.6 & 59.4 & 4.67 & 643 & 100.0 \\ \hline
+Rural & TDoA & 57.2 & 122.7 & 3.14 & 954 & 92.4 \\ \hline
+ & GPS & 4.9 & 9.6 & 75.24 & 40 & 98.5 \\ \hline
+ & AGPS & 11.3 & 22.3 & 29.16 & 103 & 99.0 \\ \hline
+ & Optimisé & 24.0 & 51.1 & 4.77 & 630 & 100.0 \\ \hline
+Mixte & TDoA & 84.4 & 189.2 & 3.14 & 954 & 100.0 \\ \hline
+ & GPS & 5.7 & 11.2 & 75.24 & 40 & 96.0 \\ \hline
+ & AGPS & 13.1 & 25.7 & 29.16 & 103 & 97.5 \\ \hline
+ & Optimisé & 22.9 & 48.1 & 6.07 & 494 & 100.0 \\ \hline
+\end{tabular}
+\end{table}
+
+%% Tableau III.5 — gains de la configuration optimisee
+\begin{table}[H]
+\centering
+\caption{Gains de l'algorithme optimise par rapport a LoRaWAN/TDoA}
+\label{tab:gains_optimise}
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+\rowcolor{myColor!20}
+\textbf{Scenario} & \textbf{Reduction RMSE} & \textbf{Surcout energetique} & \textbf{Autonomie} & \textbf{Gain de succes} \\
+\hline
+Urbain & $-56.9$ \% & $+48.5$ \% & 643 jours & $+0.0$ pts \\ \hline
+Rural & $-58.0$ \% & $+51.6$ \% & 630 jours & $+7.6$ pts \\ \hline
+Mixte & $-72.9$ \% & $+93.1$ \% & 494 jours & $+0.0$ pts \\ \hline
+\end{tabular}
+\end{table}
+
+%% Phrases a reprendre dans le texte :
+%   reduction de l'erreur : de 57 %% a 73 %%
+%   surcout energetique  : de 48 %% a 93 %%
+%   autonomie conservee  : de 494 a 643 jours (16 a 21 mois)

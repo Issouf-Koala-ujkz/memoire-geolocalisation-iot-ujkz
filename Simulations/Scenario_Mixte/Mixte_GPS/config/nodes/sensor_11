@@ -1,0 +1,14 @@
+List of parameters
+------------------------------------------
+device_type:1
+device_id:11
+device_longitude:-1.4979364424
+device_latitude:12.3879838351
+device_elevation:0.0
+device_radius:0.0
+device_hide:0
+device_pic:0
+device_draw_battery:false
+device_sensor_unit_radius:0.0
+device_gps_file_name:s11.gps
+device_script_file_name:s9.csc

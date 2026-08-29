@@ -1,0 +1,6 @@
+remarque
+L'énergie de la chaîne radio mesurée sous CupCarbon est invariante : le nombre d'émissions (288 par nœud et par jour) et la taille de trame LoRa (2048 bits) ne dépendent ni de la configuration ni de la graine.
+
+valeur mesurée (J / 24 h),1.783
+équivalent (mAh / jour),0.1501
+nombre d'émissions par nœud et par jour,288
